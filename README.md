@@ -1,5 +1,15 @@
 ## Hi there 👋
 
+{{with repo "charmbracelet" "markscribe"}}
+Name: {{.Name}}
+Description: {{.Description}}
+URL: {{.URL}}
+Stars: {{.Stargazers}}
+Is Private: {{.IsPrivate}}
+Last Git Tag: {{.LastRelease.TagName}}
+Last Release: {{humanize .LastRelease.PublishedAt}}
+{{end}}
+
 <!--
 **Yukeey07/yukeey07** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
